@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-LO [Lights Out!]</title>
+</head>
+<body>
+    <div class="appcontainer">
+        <header>
+            <div class="player-one">
+                <div class="p1 inner-glow">P1 X</div>
+                <div class="score-one inner-glow">0 pts</div>
+            </div>
+            <div class="titles">
+                <h1 class="inner-glow">Tic-Tac-LO</h1>
+                <h2 class="inner-glow">Lights On</h2>
+            </div>
+            <div class="player-two">
+                <div class="p2 inner-glow">P2 0</div>
+                <div class="score-two inner-glow">0 pts</div>
+            </div>
+        </header>
+        <div class="board">
+            <div class="settings-menu">
+                <div class="all-settings">
+                    <div class="player-settings">
+                        <div class="p1-settings">
+                            <span class="leftpad">P1 Initials: </span><span ><input class="p1initials" type="text" name="username" placeholder="P1"></span>
+                            <span class="leftpad">P1 Marker: </span><span><input class="p1mark" type="text" name="username" placeholder="X"></span>
+                        </div>
+                        <div class="p2-settings">
+                                <span class="leftpad">P2 Initials: </span><span><input class="p2initials" type="text" name="username" placeholder="P2"></span>
+                                <span class="leftpad">P2 Marker: </span><span><input class="p2mark" type="text" name="username" placeholder="0"></span>
+                        </div>
+                    </div>
+                    <div class="other-settings">
+                        <span class="leftpad">Turn Time (secs): </span><span><input class="turn-time" type="text" name="username" placeholder="5"></span>
+                        <span class="leftpad small">Flicker [Epilepsy Warning]: </span><span class="btn-span"><button class="fl-on">On</button><button class="fl-off inner-glow">Off</button></span>
+                        <span class="leftpad small">Sound: </span><span class="btn-span"><button class="snd-on inner-glow">On</button><button class="snd-off">Off</button></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-one">
+                <div class="cell A1 inner-glow top-left"></div>
+                <div class="cell B1 inner-glow"></div>
+                <div class="cell C1 inner-glow top-right"></div>
+            </div>
+            <div class="gameoptions hidden">
+                    <button class="next">Next Game</button>
+                    <button class="reset">Reset Scores</button>
+            </div>
+            <div class="start-game">
+                    <button class="next">Start Game</button>
+            </div>
+            <div class="row row-two">
+                <div class="cell A2 inner-glow"></div>
+                <div class="cell B2 inner-glow"></div>
+                <div class="cell C2 inner-glow"></div>
+            </div>
+            <div class="row row-three">
+                <div class="cell A3 inner-glow bottom-left"></div>
+                <div class="cell B3 inner-glow"></div>
+                <div class="cell C3 inner-glow bottom-right"></div>
+            </div>
+        </div>
+        <footer>
+                <span class="winner"></span>
+                <span class="credit inner-glow"><a href="https://freesound.org/people/DrMinky/sounds/174721/" target="_blank">Sound Credit: DrMinky</a></span>
+                <span class="set-btn inner-glow-orange">Settings <i class="fas fa-cog"></i></span>
+        </footer>
+    </div>   
+    <script src="app.js"></script> 
+</body>
+</html>
