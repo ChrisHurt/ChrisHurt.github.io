@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>1D Shooter | Chris Hurt</title>
+</head>
+<body>
+    <nav id="nav-top">
+            <a href="../../index.html"><image id="logo" src="../../images/Churt_logo.png"></image></a>
+            <div id="icon-wrapper-bot" class="fa-3x">
+                <a href="https://github.com/ChrisHurt" target="_blank"><div class="nav-icon git-icon"><i class="fab fa-github"></i></div></a>
+                <a href="https://www.freecodecamp.org/fcc24c1bab6-8b9b-499e-9185-66e127e03ca0" target="_blank"><div class="nav-icon fcc"><i class="fab fa-free-code-camp"></i></div></a>
+                <a href="https://www.linkedin.com/in/christopher-hurt/" target="_blank"><div class="nav-icon linkedin"><i class="fab fa-linkedin"></i></div></a>
+                <a href="mailto:chrishcoding@gmail.com"><div class="nav-icon email"><i class="fas fa-envelope"></i></div></a>
+            </div>
+    </nav>
+    <div class="container">
+        <h1>1D Shooter</h1>
+        <p class="render"></p>
+        <div class="buttons">
+            <button class="start_game">Start Game</button>
+        </div>
+        <div class="scores">
+            <div class="current_score">Score: 0</div>
+            <div class="high_score">High Score: 0</div>
+        </div>
+        <h3>Rules</h3>
+        <ul>
+            <li>Score increases with time</li>
+            <li>Walker kills give 1000 score</li>
+            <li>Bullets cost 500 score</li>
+        </ul>
+        <div class="controls">
+            <div class="move">
+                <button class="ctrl move_left">Move Left<br /><span>A</span></button>
+                <button class="ctrl move_right">Move Right<br /><span>D</span></button>
+            </div>
+            <div class="shoot">
+                <button class="ctrl shoot_left">Shoot Left<br /><span>J</span></button>
+                <button class="ctrl shoot_right">Shoot Right<br /><span>L</span></button>
+            </div>
+        </div>
+    </div>
+    <script src="1DShooter.js"></script>
+</body>
+</html>

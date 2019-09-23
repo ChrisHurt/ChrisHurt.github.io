@@ -1,0 +1,158 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+body, .container {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.render{
+    font: Courier;
+    display: block;
+    text-align: center;
+}
+h1,h2,h3{
+    display: block;
+    text-align: center;
+}
+h3{
+    margin-bottom: 0;
+}
+ul {
+    margin-top: 0;
+}
+.scores,.buttons {
+    font: Courier; 
+    text-align: Left;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.scores {
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.start_game {
+    width: 60%;
+    padding: 1rem;
+    max-width: 10rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+.start_game:hover, .move button:hover, .shoot button:hover {
+    background-color: #9e9e9e;
+    color: white;
+}
+li {
+    text-align: left;
+}
+/* Nav Bar CSS */
+#logo{
+    height: 80px;
+    /* width: 140px; */
+    max-height:100%;
+    width: auto;
+    max-width: none;
+}
+#nav-top{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80px;
+    background-color: #5e5e5e;
+    padding-right: 10px;
+}
+#icon-wrapper-bot{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+    margin: 0px 0px 0px 0px;
+}
+.nav-icon{
+    background-color: #9e9e9e;
+    border-radius: 50%;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-icon > i {
+    font-size: 5vmin;
+}
+/* .nav-icon > i{
+    color: #000;
+    position: relative;
+    top: -3px;
+} */
+@media screen and (max-width: 768px){
+    #nav-top{
+        padding-right: 10px;
+        height: 60px;
+    }
+    #icon-wrapper-bot{
+        flex-wrap: wrap;
+        height: 60px;
+     }
+    .nav-icon{
+        padding: 8px 8px 8px 8px; 
+        margin: 0px 0px 0px 0px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        display: flex;
+        margin-right: 5px;
+    }
+    .nav-icon > i {
+        font-size: 0.70em;
+    }
+}
+i {
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+.controls{
+    width: 100%;
+}
+.controls,.move,.shoot {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.move,.shoot{
+    justify-content: space-around;
+    width: 45%;
+}
+.move button, .shoot button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    width: 45%;
+    height: 5rem;
+    line-height: 1rem;
+    background-color: #FFFFFE;
+    border-radius: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+span {
+    display: block;
+    margin-top: 0.1rem;
+    font-weight: 700;
+}
