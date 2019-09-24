@@ -15,9 +15,8 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
-This is currently hosted on my website:
-- Landing Page: http://chrishcoding.tk/
-- Tic-Tac-LO: http://chrishcoding.tk/portfolio/Tic-Tac-LO/
+This is currently hosted here:
+- Tic-Tac-LO: https://chrishurt.github.io/ticTacLO/
 
 ## About The Project
 
@@ -54,7 +53,7 @@ Tic Tac LO (Lights Out) is a tic tac toe variant designed to introduce difficult
 16. Improved UI/UX Highlighting
 17. General Polish & Bug Fixes, Hosting Links Added
 
-### Future Work
+### Sprint 2 --Completed 24/09/19
 - Separation of Concerns - remove all styling for personal portfolio, it's not relevant here
 - Optimise folder structure
 

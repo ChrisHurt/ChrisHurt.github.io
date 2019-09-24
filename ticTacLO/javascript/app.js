@@ -15,8 +15,8 @@ var soundOn = true;
 var gameStarted = false;
 var inGame = false;
 
-const zap = new Audio('shortCircuit.mp3');
-const tick = new Audio('tick.wav');
+const zap = new Audio('../audio/shortCircuit.mp3');
+const tick = new Audio('../audio/tick.wav');
 
 var A1 = document.querySelector('.A1');
 var A2 = document.querySelector('.A2');
@@ -407,9 +407,11 @@ var setAllOnOff = () => {
         }
         if(state == 'on'){
             cellArray[i].classList.add('inner-glow');
+            cellArray[i].classList.remove('blank')
             document.querySelector('h2').textContent = "Lights On";
         } else if(state == 'off'){
             cellArray[i].classList.remove('inner-glow');
+            cellArray[i].classList.add('blank')
             document.querySelector('h2').textContent = "Lights Off";
         }
     }
@@ -435,8 +437,10 @@ var flicker = () => {
             randomFlicker(cellArray[randomCellIndex],randomCellIndex);
         } else if(behaviourArray[randomCellIndex] == 'on'){
             cellArray[randomCellIndex].classList.add('inner-glow');
+            cellArray[randomCellIndex].classList.remove('blank');
         } else if(behaviourArray[randomCellIndex] == 'off'){
             cellArray[randomCellIndex].classList.remove('inner-glow');
+            cellArray[randomCellIndex].classList.add('blank');
         } 
     }
 };
@@ -489,8 +493,10 @@ var turnTimer = () => {
 var randomFlicker = (cell,index) => {
     if(cell.classList.contains('inner-glow')){
         cell.classList.remove('inner-glow');
+        cell.classList.add('blank')
     } else {
         cell.classList.add('inner-glow');
+        cell.classList.remove('blank')
     }
     timerHandle[index] = setTimeout(randomFlicker.bind(null,cell,index),Math.random()*850 + 150);
 };
@@ -499,13 +505,9 @@ var enterScene = function(element,className){
     if(!element.classList.contains(className)){
         element.classList.add(className);
     }
-    // setTimeout(()=>{
-        element.classList.remove('inner-glow');
-        element.classList.remove('inner-glow-orange');
-        // setTimeout(()=>{
-            element.classList.add(className);
-    //     },600);
-    // },300);
+    element.classList.remove('inner-glow');
+    element.classList.remove('inner-glow-orange');
+    element.classList.add(className);
 };
 
 var startGame = () => {
